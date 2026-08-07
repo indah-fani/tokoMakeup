@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<title>Toko Make Up</title>
+<style>
+  * { margin:0; padding:0; box-sizing:border-box; font-family: 'Segoe UI', sans-serif; }
+  body { padding: 20px; background: #fff; }
+
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+    gap: 15px;
+  }
+  .header h1 {
+    font-size: 32px;
+  }
+  .search-box {
+    flex: 1;
+    min-width: 200px;
+    padding: 14px 20px;
+    border-radius: 30px;
+    border: none;
+    background: #b39ddb;
+    font-size: 16px;
+  }
+  .search-box::placeholder { color: #333; }
+
+  .hero {
+    background: #f7c9e6;
+    border-radius: 20px;
+    padding: 40px;
+  }
+  .hero-text h2 {
+    font-size: 34px;
+    margin-bottom: 15px;
+  }
+  .hero-text p {
+    font-size: 18px;
+    margin-bottom: 20px;
+  }
+  .btn {
+    background: #d63384;
+    color: white;
+    border: none;
+    padding: 14px 28px;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+
+  .categories {
+    display: flex;
+    justify-content: space-around;
+    margin: 40px 0 10px;
+    text-align: center;
+    flex-wrap: wrap;
+    gap: 15px;
+  }
+
+  .best-seller h2 {
+    margin: 20px 0;
+    font-size: 24px;
+  }
+  .products {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  .product-card p {
+    font-size: 16px;
+    margin: 2px 0;
+  }
+  .product-card .price {
+    font-weight: bold;
+  }
+</style>
+</head>
+<body>
+
+  <div class="header">
+    <h1>Toko<br>Make Up</h1>
+    <input type="text" class="search-box" placeholder="Cari produk...">
+  </div>
+
+  <div class="hero">
+    <div class="hero-text">
+      <h2>Tampil Cantik,<br>Percaya Diri Setiap Hari</h2>
+      <p>Temukan make up favoritmu dengan kualitas terbaik ✨</p>
+      <button class="btn">belanja sekarang</button>
+    </div>
+  </div>
+
+  <div class="categories">
+    <p>face</p>
+    <p>lip</p>
+    <p>eye</p>
+    <p>skincare</p>
+    <p>nail</p>
+  </div>
+
+  <div class="best-seller">
+    <h2>Best Seller</h2>
+    <div class="products">
+
+      <div class="product-card">
+        <p>Dior backstage eye shadow</p>
+        <p class="price">Rp.1.040.000</p>
+      </div>
+
+      <div class="product-card">
+        <p>Touche Éclat Glow-Pact Cushion</p>
+        <p class="price">Rp.1.490.000</p>
+      </div>
+
+      <div class="product-card">
+        <p>Romantic body mist 250 ml</p>
+        <p class="price">Rp.389.000</p>
+      </div>
+
+      <div class="product-card">
+        <p>Jo Malone cologne</p>
+        <p class="price">Rp.3.450.000</p>
+      </div>
+
+    </div>
+  </div>
+
+</body>
+</html>
